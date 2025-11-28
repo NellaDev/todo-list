@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!--global container-->
+    <div id="todo-container">
+        <header id="header">
+            <h2>To-do List</h2>
+        </header>
+
+        <!--input-->
+        <div id="todo-form">
+        <input type="text" class="editable" name="input-box" id="input-box" placeholder="task name"/>
+
+        <button type="submit" id="input-button" onclick="addTask()">Add</button>
+
+        <!--task list-->
+        <h3>Task list</h3>
+        <ul id="list-container">
+
+        </ul>
+        <hr/>
+        <!--task list counter-->
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed: <span id="completed-counter">0</span> | 
+                Uncompleted: <span id="uncompleted-counter">0</span>
+
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Your To-Do List • All rights reserved
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
